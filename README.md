@@ -228,9 +228,9 @@ After training, the model achieves:
 
 ## 🔗 Links
 
-- **GitHub Repository**: [Add your repo URL]
-- **Docker Hub**: [Add your Docker Hub URL]
-- **HuggingFace Space**: [Add your Space URL]
+- **GitHub Repository**: [[Github-House-price-predictor](https://github.com/SamiMalek10/House-Price-Prediction)]
+- **Docker Hub**: [[Docker-House-price-predictor](https://hub.docker.com/repository/docker/samimlk/house-price-prediction/)]
+- **HuggingFace Space**: [[Hugginface-House-price-predictor](https://huggingface.co/spaces/sameeeeuaytehk15/house-price-predictor)]
 
 ## 👨‍💻 Author
 
