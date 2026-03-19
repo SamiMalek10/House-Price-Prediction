@@ -134,6 +134,25 @@ Tp2_docker/
     └── prediction.png
 ```
 
+## 🧪 Testing
+
+Run the test suite with:
+
+```bash
+python -m pytest test_train.py -v
+```
+
+### Test coverage — 11 tests across 4 classes
+
+| Class | What it checks |
+| ------- | --------------- |
+| `TestGenerateSyntheticData` | Shape (1000×8), column names, feature ranges, no nulls, positive prices, seed reproducibility |
+| `TestScalerLeakage` | `StandardScaler` is fit only on training data (no data leakage) |
+| `TestModelTraining` | Prediction output shape and test R² ≥ 0.85 |
+| `TestArtifactPersistence` | End-to-end: train → pickle artifacts → reload → predict on a sample input |
+
+> **Note**: `pytest` is not in `requirements.txt` (it's a dev dependency). Install it with `pip install pytest` before running.
+
 ## 🔧 Technical Stack
 
 - **Python**: 3.11
